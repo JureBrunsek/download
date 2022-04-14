@@ -7,11 +7,12 @@ Bu versiyonlar deneme amaçlı üretilmiştir.
     en geç 20 saniyede bir 0xff talebi bekliyordu eğer panelden gelmezse kendisine reset atıyordu, bu özellik olası hatalı kullanıma karşı kapatıldı.
     Reset ihtimallerine iyileştirmeler yapıldı.
 
-VERSIYON 1
-1. SmartIO_Stream_Regular.bin ;  82 byte olarak çalışır.
+-VERSIYON 1
+* SmartIO_Stream_Regular.bin ;  82 byte olarak çalışır.
 
-VERSIYON 2
-2. SmartIO_Stream_Small.bin   ;  38 byte olarak çalışır.
+
+-VERSIYON 2
+* SmartIO_Stream_Small.bin   ;  38 byte olarak çalışır.
 
    Eski protocol gibi rölelerden sonra mesaj sonu karakteri ile bitirilir.
   msg[0]=MESSAGE_HEAD;
@@ -57,8 +58,11 @@ VERSIYON 2
 	msg[32] = (HSC7_TOTAL & 0x000000ff);
   
 	msg[33]=((retValHSC0) | (retValHSC1 << 1) | (retValHSC2 << 2) | (retValHSC3 << 3) | (retValHSC4  << 4) | (retValHSC5 << 5) | (retValHSC6 << 6) | (retValHSC7 << 7)) ; // HSC girişler
-	msg[34]=((retValI0) | (retValI1 << 1) | (retValI2 << 2) | (retValI3 << 3) | (retValI4  << 4) | (retValI5 << 5) | (retValI6 << 6) | (retValI7 << 7)) ; // DIGITAL girişler
+	
+	msg[34]=((retValI0) | (retValI1 << 1) | (retValI2 << 2) | (retValI3 << 3) | (retValI4  << 4) | (retValI5 << 5) | (retValI6 << 6) | (retValI7 << 7)) ;
+	
 	msg[35]=digitalOutputs;
-    msg[36]=((retValR1) | (retValR2 << 1)); // roleler
+	
+     msg[36]=((retValR1) | (retValR2 << 1)); // roleler
  
 	msg[37]=MESSAGE_TAIL;
