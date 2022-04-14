@@ -59,6 +59,6 @@ VERSIYON 2
 	msg[33]=((retValHSC0) | (retValHSC1 << 1) | (retValHSC2 << 2) | (retValHSC3 << 3) | (retValHSC4  << 4) | (retValHSC5 << 5) | (retValHSC6 << 6) | (retValHSC7 << 7)) ; // HSC girişler
 	msg[34]=((retValI0) | (retValI1 << 1) | (retValI2 << 2) | (retValI3 << 3) | (retValI4  << 4) | (retValI5 << 5) | (retValI6 << 6) | (retValI7 << 7)) ; // DIGITAL girişler
 	msg[35]=digitalOutputs;
-  msg[36]=((retValR1) | (retValR2 << 1)); // roleler
-  
+        msg[36]=((retValR1) | (retValR2 << 1)); // roleler
+ 
 	msg[37]=MESSAGE_TAIL;
