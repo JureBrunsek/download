@@ -1,14 +1,16 @@
 Bu versiyonlar deneme amaçlı üretilmiştir.
 
 * Tüm alternatif çözümlerde ortak adımlar 
- a. 300ms den -> 500ms de bir veri basmaya çevrildi.
- b. Girişlere göre anlık veri basma özelliği kaldırıldı, panel boğulmasın diye. Duruma göre 1 ms de bir arası veri bastığı oluyordu.
- c. Başlangıçta bir kere verilerin setlenmesi yeterlidir, kart resetlenene kadar 0xFF talebi beklemez. Main stream ürününde 
+ * 300ms den -> 500ms de bir veri basmaya çevrildi.
+ * Girişlere göre anlık veri basma özelliği kaldırıldı, panel boğulmasın diye. Duruma göre 1 ms de bir arası veri bastığı oluyordu.
+ * Başlangıçta bir kere verilerin setlenmesi yeterlidir, kart resetlenene kadar 0xFF talebi beklemez. Main stream ürününde 
     en geç 20 saniyede bir 0xff talebi bekliyordu eğer panelden gelmezse kendisine reset atıyordu, bu özellik olası hatalı kullanıma karşı kapatıldı.
     Reset ihtimallerine iyileştirmeler yapıldı.
 
 VERSIYON 1
 1. SmartIO_Stream_Regular.bin ;  82 byte olarak çalışır.
+
+VERSIYON 2
 2. SmartIO_Stream_Small.bin   ;  38 byte olarak çalışır.
 
    Eski protocol gibi rölelerden sonra mesaj sonu karakteri ile bitirilir.
