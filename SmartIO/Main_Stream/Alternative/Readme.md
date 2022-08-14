@@ -121,6 +121,7 @@ Bu versiyonlar deneme amaçlı üretilmiştir.
 	
         msg[36]=((retValR1) | (retValR2 << 1)); // roleler
 	
+	
       int msgindex=37;
       for(xz=0; xz < MISKET_TYPE_COUNT ; xz++) (MISKET_TYPE_COUNT 12 adet)
       {
@@ -131,3 +132,6 @@ Bu versiyonlar deneme amaçlı üretilmiştir.
        }
 
        msg[85]=MESSAGE_TAIL;
+       
+       
+     
