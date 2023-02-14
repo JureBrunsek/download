@@ -1,2 +1,0 @@
-I0 ve P3 e bağlı 2 sinyal birlikte varolması makine running durumunda demektir.
-Her iki sinyal 1iken I0 = 1 , herhangi bir sinyal 0 ise I0=0 dır.
