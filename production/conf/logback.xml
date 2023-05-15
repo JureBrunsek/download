@@ -5,7 +5,7 @@
     <!--<logger name="com.betex.task.fixture" level="WARN"/>-->
     <!--<logger name="com.betex" level="ERROR"/>-->
     <!--<logger name="com.dasssmart.desktop" level="ERROR"/>-->
-    <logger name="com.mchange" level="WARN"/>
+    <logger name="com.mchange" level="TRACE"/>
 
     <appender name="ROLLING" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>logs/dass-desktop.log</file>
