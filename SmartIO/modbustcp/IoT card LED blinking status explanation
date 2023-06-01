@@ -1,0 +1,7 @@
+SmartIO2_ModbusTCP.bin May 2023 update summary:
+1. If there is a healthy communication between PLC and IOT card, RO-0 = 1.
+2. If there is no healthy communication between PLC and IOT card, RO-0 = 0.
+3. If there is no communication betwenn PLC and IOT, the card will reset itself after about 30 seconds and continue to work again and set RO-0 to 1 if communication is okey.
+4. Periodic flashing of the LED in the middle of the card indicates that the software of the card continues to work properly. As long as this LED is blinking, it means that all peripherals are working properly.
+5. The flashing of the LED (right bottom corner of the card) indicates that the PANEL program has opened ports such as USB0/USB1 and that the card can send data to the panel. 
+If this led is not lit, it means that the PANEL program did not open the USB in the USB list and this is entirely the responsibility of the panel software, because the IOT card does not open any usb port or query whether it is open.
